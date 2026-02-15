@@ -1,102 +1,193 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Alisha Khan | Portfolio</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Alisha Khan | Portfolio</title>
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
 
-<header>
+<header class="navbar">
+    <div class="logo">AK</div>
     <nav>
-        <h2 class="logo">Alisha Khan</h2>
-        <ul class="nav-links">
-            <li><a href="#about">About</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#achievements">Achievements</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#stack">Stack</a>
+        <a href="#contact">Contact</a>
     </nav>
+    <a href="#contact" class="nav-btn">Let's Talk</a>
 </header>
 
 <section class="hero">
-    <h1>Hello, I'm <span>Alisha Khan</span></h1>
-    <h3 class="typing"></h3>
-    <p>Computer Engineering Student | Full-Stack Developer | IoT Enthusiast</p>
-    <a href="#contact" class="btn">Contact Me</a>
+    <div class="hero-left">
+        <div class="profile-wrapper">
+            <img src="profile.jpg" alt="Alisha">
+        </div>
+    </div>
+
+    <div class="hero-right">
+        <div class="badge">Available For Work</div>
+        <h1>Alisha Khan</h1>
+        <h2>Full-Stack Developer</h2>
+        <p>Building robust backends and beautiful frontends that just work.</p>
+
+        <div class="hero-buttons">
+            <a href="#projects" class="primary-btn">View My Work</a>
+            <a href="#contact" class="secondary-btn">Get In Touch</a>
+        </div>
+    </div>
 </section>
 
 <section id="about" class="section">
-    <h2>About Me</h2>
-    <p>
-        Computer Engineering student at Rizvi College of Engineering (CGPA: 9.54).
-        Passionate about building scalable web applications and IoT-based safety systems.
-        Strong foundation in Data Structures, Algorithms, DBMS, and Backend Development.
-    </p>
-</section>
+    <h5 class="section-tag">ABOUT ME</h5>
+    <h2>Building products that live beyond the code</h2>
 
-<section id="skills" class="section dark-card">
-    <h2>Skills</h2>
-    <div class="skills-container">
-        <div>Java</div>
-        <div>C / C++</div>
-        <div>HTML</div>
-        <div>CSS</div>
-        <div>JavaScript</div>
-        <div>Node.js</div>
-        <div>Express.js</div>
-        <div>MongoDB</div>
-        <div>SQL</div>
-        <div>REST APIs</div>
-        <div>Git & GitHub</div>
-    </div>
+    <p>
+        I’m a passionate Computer Engineering student and Full-Stack Developer 
+        who enjoys transforming complex problems into scalable, elegant, and 
+        user-friendly digital solutions.
+    </p>
+
+    <p>
+        My focus lies in writing clean, maintainable backend systems and 
+        designing modern, responsive frontends that deliver seamless user 
+        experiences. I believe great software is not just functional — 
+        it is reliable, efficient, and built to grow.
+    </p>
+
+    <p>
+        Currently exploring IoT systems, backend architecture, and 
+        performance-focused web applications.
+    </p>
 </section>
 
 <section id="projects" class="section">
-    <h2>Projects</h2>
+    <h2 class="projects-title">Featured Projects</h2>
 
-    <div class="project-card">
-        <h3>Stayverra – Vacation Rental Platform</h3>
-        <p>
-            Full-stack web application built using Node.js, Express.js, MongoDB, and EJS.
-            Implemented authentication using Passport.js, session management,
-            RESTful APIs, flash messaging, and secure environment configurations.
-        </p>
-        <a href="https://wanderlust-website-yr54.onrender.com/listings" target="_blank">Live Demo</a>
-    </div>
+    <div class="projects-grid">
 
-    <div class="project-card">
-        <h3>IoT-Based Passcode Protection Gas Stove</h3>
-        <p>
-            Developed an IoT-enabled gas stove safety system using microcontroller technology.
-            Prevents unauthorized access and enables real-time alerts through mobile integration.
-        </p>
+        <!-- PROJECT 01 -->
+        <div class="project-card">
+            <span class="project-number">01</span>
+            <h3>SHEPHERD</h3>
+            <p>
+                An AI-driven women’s safety platform that predicts risk before danger 
+                occurs using behavioral, digital, and location-based patterns to deliver 
+                proactive alerts and emergency support.
+            </p>
+
+            <div class="tech-tags">
+                <span>Machine Learning</span>
+                <span>Python</span>
+                <span>FastAPI</span>
+                <span>React</span>
+                <span>Location APIs</span>
+            </div>
+
+            <a href="https://shepherd-8abo.onrender.com/" target="_blank" class="demo-link">
+                View Live Demo 
+            </a>
+        </div>
+
+        <!-- PROJECT 02 -->
+        <div class="project-card">
+            <span class="project-number">02</span>
+            <h3>QuietRoute</h3>
+            <p>
+                A safety-focused navigation platform that highlights unsafe areas using 
+                interactive maps, real-time community reports, and secure authentication 
+                to help users choose safer routes.
+            </p>
+
+            <div class="tech-tags">
+                <span>MERN Stack</span>
+                <span>Node.js</span>
+                <span>Leaflet.js</span>
+                <span>JWT</span>
+                <span>MongoDB</span>
+            </div>
+
+            <a href="https://quiteroute.onrender.com/" target="_blank" class="demo-link">
+                View Live Demo 
+            </a>
+        </div>
+
+        <!-- PROJECT 03 -->
+        <div class="project-card">
+            <span class="project-number">03</span>
+            <h3>Stayverra</h3>
+            <p>
+                A full-stack vacation rental platform featuring secure authentication, 
+                modular RESTful APIs, dynamic listings, and a responsive UI for a 
+                seamless booking experience.
+            </p>
+
+            <div class="tech-tags">
+                <span>Node.js</span>
+                <span>Express.js</span>
+                <span>MongoDB</span>
+                <span>EJS</span>
+                <span>Passport.js</span>
+            </div>
+
+            <a href="https://wanderlust-website-yr54.onrender.com/listings" target="_blank" class="demo-link">
+                View Live Demo 
+            </a>
+        </div>
+
     </div>
 </section>
 
-<section id="achievements" class="section dark-card">
-    <h2>Achievements</h2>
-    <ul>
-        <li>🏆 1st Prize Winner – National Science Day</li>
-        <li>🏅 Finalist – PRAKALP 2.0 Project Competition (IEEE-WIE)</li>
-        <li>👩‍💼 Team Leader – Academic Project</li>
-    </ul>
+
+
+<section id="stack" class="section">
+    <h5 class="section-tag">TECH STACK</h5>
+    <h2>Technologies I Work With</h2>
+
+    <div class="tech-grid">
+        <div>Java</div>
+        <div>C++</div>
+        <div>Python</div>
+        <div>HTML5</div>
+        <div>CSS3</div>
+        <div>JavaScript</div>
+        <div>TailwindCSS</div>
+        <div>Node.js</div>
+        <div>Express.js</div>
+        <div>MongoDB</div>
+        <div>MySQL</div>
+        <div>Git</div>
+        <div>GitHub</div>
+        <div>REST APIs</div>
+        <div>Machine Learning</div>
+        <div>AWS</div>
+        <div>MySQL</div>
+        <div>Passport.js</div>
+        <div>JWT</div>
+        <div>Docker</div>
+        <div>FastAPI</div>
+
+    </div>
 </section>
 
-<section id="contact" class="section">
-    <h2>Contact</h2>
-    <p>Email: <a href="mailto:alisha810495@gmail.com">alisha810495@gmail.com</a></p>
-    <p>Phone: 9321235271</p>
-    <p>
-        <a href="https://www.linkedin.com/in/alishakhan16/" target="_blank">LinkedIn</a> |
-        <a href="https://github.com/Alisha-cloud" target="_blank">GitHub</a>
-    </p>
+
+<section id="contact" class="section contact">
+    <h5 class="section-tag">GET IN TOUCH</h5>
+    <h2>Let's Work Together</h2>
+    <p>I’m always open to discussing new opportunities and ideas.</p>
+
+    <a href="mailto:alisha810495@gmail.com" class="primary-btn">Say Hello →</a>
+
+    <div class="socials">
+        <a href="https://github.com/Alisha-cloud">GitHub</a>
+        <a href="https://www.linkedin.com/in/alishakhan16/">LinkedIn</a>
+    </div>
 </section>
 
 <footer>
-    <p>© 2026 Alisha Khan | All Rights Reserved</p>
+    © 2026 Alisha. Built with passion.
 </footer>
 
 <script src="script.js"></script>
